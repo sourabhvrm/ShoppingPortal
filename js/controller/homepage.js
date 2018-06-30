@@ -1,15 +1,8 @@
 validateUser();
 
-function validateUser(){
-    if(!localStorage.username){
-        location.href="login.html";
+var mainBody = document.querySelector("#mainBody");
+function validateUser() {
+    if (!localStorage.username) {
+        location.href = "login.html";
     }
-}
-
-function validateProductData(){
-
-}
-
-function addProduct(){
-    
 }

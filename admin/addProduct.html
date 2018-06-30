@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/admin/addProduct.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="../js/config/utils.js"></script>
+    <script src="../js/model/product.js"></script>
+    <script src="../js/db/product.js"></script>
+    <script src="../js/model/category.js"></script>
+    <script src="../js/db/category.js"></script>
+    <script src="../js/controller/addProduct.js"></script>
+    <title>Admin Portal</title>
+</head>
+
+<body>
+    <section class="container-fluid header-parent">
+        <section class="row header">
+            <p>
+                <img src="../img/icon.png" alt="Shopping icon"> Shopping Portal</p>
+            <input type="text" class="form-control" name="" id="search" placeholder="Search Products here">
+            <a href="homepage.html" id="self"></a>
+        </section>
+    </section>
+    <section class="container">
+        <section class="menu">
+            <a href="homepage.html">Home Page</a>
+            <a href="addProduct.html">Add Product</a>
+        </section>
+        <section class="formgroup">
+            <section class="form-group">
+                <label for="prodName">Product Name</label>
+                <input type="text" name="" id="prodName" class="form-control" placeholder="Product Name">
+            </section>
+            <section class="form-group">
+                <label for="prodDesc">Product Description</label>
+                <textarea name="" id="prodDesc" cols="30" rows="5" class="form-control"></textarea>
+            </section>
+            <section class="form-group form-row">
+                <section class="col-md-6 col-sm-6 col-6">
+                    <label for="category">Category</label>
+                    <select name="" id="category" class="form-control">
+                        <option value="">Retrieving Categories...</option>
+                    </select>
+                </section>
+                <section class="col-md-6 col-sm-6 col-6">
+                    <label for="price">Price</label>
+                    <input type="number" name="" id="price" class="form-control" placeholder="Enter Price">
+                </section>
+            </section>
+            <section class="form-group imageUrl">
+                <label for="images">Images</label>
+                <input type="text" name="" id="imageUrl" class="form-control" placeholder="Image Url">
+            </section>
+            <section class="form-group submit-btn" id="addProductBtn">
+                <button class="btn btn-secondary">Submit</button>
+            </section>
+            <section class="form-group"></section>
+            <section class="form-group"></section>
+        </section>
+    </section>
+</body>
+
+</html>
