@@ -1,0 +1,9 @@
+.form-container{
+    background-color: bisque;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.form-container button{
+    text-align: center;
+}

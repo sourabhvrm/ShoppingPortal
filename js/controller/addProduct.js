@@ -33,6 +33,13 @@ function validateProductData() {
 
 }
 
+function clearFields() {
+    document.querySelector("#prodName").value = "";
+    document.querySelector("#prodDesc").value = "";
+    document.querySelector("#imageUrl").value = "";
+    document.querySelector("#price").value = "";
+}
+
 function addProduct() {
     var date = new Date();
     var curDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
@@ -43,5 +50,6 @@ function addProduct() {
     var category = document.querySelector("#category").value;
     var product = new Products(id, name, desc, category, 0, image, curDate, price, 0, 0, 0, true);
     productOperations.addProduct(product);
+    clearFields();
     id++;
 }

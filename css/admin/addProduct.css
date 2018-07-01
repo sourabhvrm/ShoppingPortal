@@ -47,3 +47,8 @@
 .submit-btn{
     text-align: center;
 }
+
+.menu a{
+    padding-left: 10px;
+    padding-right: 10px;
+}

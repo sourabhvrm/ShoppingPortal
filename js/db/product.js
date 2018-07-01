@@ -5,6 +5,7 @@ const productOperations = {
             alert("Prdoduct Added");
         } catch (error) {
             console.log(error);
+            throw new Error();
         }
     },
     generateId() {
@@ -16,6 +17,7 @@ const productOperations = {
             });
         } catch (error) {
             console.log(error);
+            throw new Error();
         }
     }
 }

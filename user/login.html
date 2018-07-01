@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/user/login.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="../js/config/utils.js"></script>
+    <script src="../js/model/user.js"></script>
+    <script src="../js/db/user.js"></script>
+    <script src="../js/controller/userlogin.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <section class="container-fluid header-parent">
+        <section class="row header">
+            <p>
+                <img src="../img/icon.png" alt="Shopping icon"> Shopping Portal</p>
+            <input type="text" class="form-control" name="" id="search" placeholder="Search Products here">
+            <a href="homepage.html" id="self"></a>
+        </section>
+    </section>
+    <section class="container">
+        <section class="container">
+            <section class="form-container">
+                <section class="form-group">
+                    <!-- <label for="username">User Name</label> -->
+                    <input type="text" name="" id="username" class="form-control" placeholder="Enter User Name">
+                </section>
+                <section class="form-group">
+                    <!-- <label for="password">Password</label> -->
+                    <input type="password" name="" id="password" class="form-control" placeholder="Enter Password">
+                </section>
+                <button class="btn btn-secondary" id="userlogin">LogIn</button>
+                <section class="new-user">
+                    <a href="signup.html">New User? Sign Up</a>
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
