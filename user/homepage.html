@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/user/homepage.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="../js/config/utils.js"></script>
+    <script src="../js/model/user.js"></script>
+    <script src="../js/db/user.js"></script>
+    <script src="../js/model/product.js"></script>
+    <script src="../js/db/product.js"></script>
+    <script src="../js/controller/userhomepage.js"></script>
+    <title>Shopping Portal</title>
 </head>
+
 <body>
-    
+    <section class="container-fluid header-parent">
+        <section class="row header">
+            <p>
+                <img src="../img/icon.png" alt="Shopping icon"> Shopping Portal</p>
+            <input type="text" class="form-control" name="" id="search" placeholder="Search Products here">
+            <span id="welcomeTag"></span>
+            <button class="btn btn-link" id="logout">Log Out</button>
+        </section>
+    </section>
+    <section class="container">
+        <section class="menu">
+
+        </section>
+    </section>
 </body>
+
 </html>

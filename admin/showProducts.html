@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/admin/homepage.css">
+    <link rel="stylesheet" href="../css/admin/showProduct.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
     <script src="../js/config/utils.js"></script>
-    <script src="../js/controller/homepage.js"></script>
+    <script src="../js/controller/showProducts.js"></script>
     <title>Admin Portal</title>
 </head>
 
@@ -21,7 +21,8 @@
             <p>
                 <img src="../img/icon.png" alt="Shopping icon"> Shopping Portal</p>
             <input type="text" class="form-control" name="" id="search" placeholder="Search Products here">
-            <a href="homepage.html" id="self"></a>
+            <span id="welcomeTag"></span>
+            <button class="btn btn-link" id="logout">Log Out</button>
         </section>
     </section>
     <section class="container">
@@ -31,7 +32,18 @@
             <a href="addCategory.html">Add Category</a>
             <a href="showProducts.html">Show All Products</a>
         </section>
-        <section id="mainBody"></section>
+        <section id="mainBody">
+            <section class="productBox">
+                <span>Polo</span>
+                <img src="../icons/down-arrow.png" alt="" srcset="">
+                <section class="productDetails">
+                    <section class="desc">
+                        <textarea name="" id="" cols="60" rows="5" disabled></textarea>
+
+                    </section>
+                </section>
+            </section>
+        </section>
     </section>
 </body>
 

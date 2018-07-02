@@ -1,0 +1,69 @@
+.header-parent {
+    padding: 0px;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: cornflowerblue;
+    margin: 0px;
+}
+
+.header p {
+    margin-left: 180px;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.header input {
+    width: 500px;
+    height: 40px;
+    margin: 15px 50px;
+}
+
+.header p img {
+    width: 50px;
+    height: 35px;
+}
+
+#welcomeTag {
+    margin: auto 80px;
+}
+
+.header button {
+    padding: 0;
+}
+
+.menu {
+    width: 100%;
+    background-color: rgb(236, 210, 200);
+    padding: 10px 20px;
+}
+
+.menu a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.productBox {
+    margin: 0 auto;
+    width: 70%;
+    background-color: antiquewhite;
+}
+
+.productBox img {
+    width: 15px;
+    height: 15px;
+    float: right;
+    cursor: pointer;
+    margin: auto 10px;
+}
+
+.productBox span {
+    margin-left: 20px;
+}
+
+.productDetails {
+    padding: 10px 20px;
+}
