@@ -13,6 +13,7 @@ const categoryOperations = {
             category.on("value", (snapshot) => {
                 resolve(snapshot.val());
             });
+            setTimeout(() => reject("Error"), 5000);
         });
         return pr;
     },

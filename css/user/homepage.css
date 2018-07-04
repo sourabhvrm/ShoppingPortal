@@ -56,7 +56,6 @@
     padding: 10px 20px;
 }
 
-.menu a {
-    padding-left: 10px;
-    padding-right: 10px;
+.menu button {
+    margin-right: 20px;
 }

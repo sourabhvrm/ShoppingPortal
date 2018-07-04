@@ -20,14 +20,15 @@ const productOperations = {
             throw new Error();
         }
     },
-    retrieve() {
+    retrieveProducts() {
         try {
             var pr = new Promise((resolve, reject) => {
-                var product = firebase.database().ref("products/");
+                var product = firebase.database().ref("product/");
                 product.on("value", snapshot => {
                     // console.log(snapshot.val());
                     resolve(snapshot.val());
                 });
+                setTimeout(() => reject("Product Error"), 5000);
             });
             return pr;
         } catch (error) {
